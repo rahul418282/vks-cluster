@@ -24,8 +24,8 @@ provider "local" {
 }
 
 data "vcfa_kubeconfig" "kube_config" {
-  project_name              = "${var.vcfa_project}"
-  supervisor_namespace_name = "${var.supervisor_namespace_name}"
+  project_name              = var.vcfa_project
+  supervisor_namespace_name = var.supervisor_namespace_name
 }
 
 # The kubeconfig can be used to configure the Kubernetes provider

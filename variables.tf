@@ -41,3 +41,7 @@ variable "vcfa_region" {
   type        = string
   description = "VCFA region name"
 }
+variable "cluster_name" {
+  type        = string
+  description = "Kubernetes cluster name"
+}
